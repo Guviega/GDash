@@ -527,7 +527,7 @@ class _DashboardPageState extends State<DashboardPage>
       _parseReply(response.toUpperCase().replaceAll(RegExp(r'[^0-9A-F]'), ''));
     }
     if (_connected && mounted) {
-      Future.delayed(const Duration(milliseconds: 250), _poll);
+      Future.delayed(const Duration(milliseconds: 50), _poll);
     }
   }
 
